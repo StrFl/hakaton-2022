@@ -1,0 +1,29 @@
+CREATE TABLE IF NOT EXISTS mainmenu(
+id integer PRIMARY KEY AUTOINCREMENT,
+title text NOT NULL,
+url text NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS posts (
+id integer PRIMARY KEY AUTOINCREMENT,
+title text NOT NULL,
+text text NOT NULL,
+time integer NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS user (
+id integer PRIMARY KEY AUTOINCREMENT,
+user_name TEXT NOT NULL,
+pass TEXT NOT NULL,
+email TEXT NOT NULL,
+auth TEXT NOT NULL,
+otdel TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS document (
+id INTEGER PRIMARY KEY AUTOINCREMENT, 
+user_name TEXT NOT NULL,  
+file BLOB NOT NULL,
+file_name TEXT NOT NULL
+);
+

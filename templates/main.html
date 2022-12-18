@@ -1,0 +1,47 @@
+
+{% extends 'base.html' %}
+
+{% block body%}
+
+    <header class="header">
+        <a href="#" class="header__logo"><img src="/static/images/Component 1.png" alt=""></a>
+        <div class="form">
+            <button class="form__button"></button>
+            
+        </div>
+        <nav class="header_nav">
+            <ul class="header__list">
+                
+            
+                
+                <li class="header__item"> <a href="/login" class="header__link header__link_gradient">Войти</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <section>
+            <div class="main">
+                <div class="main__text">
+                    <h1 class="main__title">
+                        Загружайте свои документы для обмена и хрения
+                    </h1>
+                    <p class="main__desc">Lorem</p>
+                    <a class="main__btn main__btn_gradient" href="/login" >Начать работу</a>
+                   
+                    <ul class="main__list">
+                        <li class="main__item"><span class="main__span">37тыс.</span>Положительных отзывов</li>
+                        <li class="main__item"><span class="main__span">20k+</span>Довольных клиентов</li>
+                        <li class="main__item"> <span class="main__span">99+</span>Гб для хранения</li>
+                    </ul>
+                </div>
+                <div class="main__image">
+                    <img class="main__img" src="/static/images/mainimg.png" alt="">
+                </div>
+            </div>
+            
+        </section>
+        
+
+    </div>
+
+    {% endblock %}

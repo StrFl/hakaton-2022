@@ -1,0 +1,15 @@
+
+{% extends 'base.html' %}
+
+{% block body%}
+<div class="div_center">
+<form action="/login" method="POST" class="password">
+  <p class="sign__title"><label class="sign__title">Name:</label><input type="text" name="username" value="" requied class="form__input" />
+  <p><label>Password:</label><input type="text" name="psw" value="" requied class="form__input" />
+  <p><input type="submit" value="Авторизация" class="main__btn main__btn_gradient" />
+  </form>
+  </div>
+
+
+{% endblock %}
+
